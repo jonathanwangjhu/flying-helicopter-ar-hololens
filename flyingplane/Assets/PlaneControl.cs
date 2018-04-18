@@ -30,19 +30,48 @@ public class PlaneControl : MonoBehaviour {
             rb.AddRelativeForce(Vector3.back * speed);
         }
 
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb.AddRelativeForce(Vector3.left * 0.25f * speed);
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            rb.AddRelativeForce(Vector3.right * 0.25f * speed);
+        }
     }
 
     // Update is called once per frame
     void Update () {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(-Vector3.up * 15 * Time.deltaTime);
+            transform.Rotate(Vector3.down * 15 * Time.deltaTime);
 
         }
+
         if (Input.GetKey(KeyCode.D))
         {
             transform.Rotate(Vector3.up * 15 * Time.deltaTime);
+        }
 
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Rotate(Vector3.left * 15 * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Rotate(Vector3.right * 15 * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.Rotate(Vector3.forward * 15 * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Rotate(Vector3.back * 15 * Time.deltaTime);
         }
     }
 }
