@@ -15,12 +15,21 @@ public class PlaneControl : MonoBehaviour {
 
     void FixedUpdate()
     {
-        float moveHorizontal = 0.0f;// Input.GetAxis("Horizontal");
+        /*float moveHorizontal = 0.0f;// Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
-        rb.AddForce(movement * speed);
+        rb.AddForce(movement * speed);*/
+
+        if (Input.GetKey(KeyCode.W)) {
+            rb.AddRelativeForce(Vector3.forward * speed);
+        }
+
+        if (Input.GetKey(KeyCode.S)) {
+            rb.AddRelativeForce(Vector3.back * speed);
+        }
+
     }
 
     // Update is called once per frame
