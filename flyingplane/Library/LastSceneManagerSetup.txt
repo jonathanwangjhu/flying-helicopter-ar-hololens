@@ -1,1 +1,4 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/plane.unity
+  isLoaded: 1
+  isActive: 1
