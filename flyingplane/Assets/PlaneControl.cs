@@ -56,22 +56,22 @@ public class PlaneControl : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            transform.Rotate(Vector3.left * 15 * Time.deltaTime);
+            transform.Rotate(Vector3.left * 45 * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            transform.Rotate(Vector3.right * 15 * Time.deltaTime);
+            transform.Rotate(Vector3.right * 45 * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Rotate(Vector3.forward * 15 * Time.deltaTime);
+            transform.Rotate(Vector3.forward * 45 * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Rotate(Vector3.back * 15 * Time.deltaTime);
+            transform.Rotate(Vector3.back * 45 * Time.deltaTime);
         }
     }
 }
