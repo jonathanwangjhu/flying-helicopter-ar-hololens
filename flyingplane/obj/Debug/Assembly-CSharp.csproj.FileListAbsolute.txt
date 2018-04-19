@@ -1,2 +1,0 @@
-E:\My Files\JHU\Spring 2018\AR\flying-plane\flyingplane\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
-E:\My Files\JHU\Spring 2018\AR\flying-plane\flyingplane\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
