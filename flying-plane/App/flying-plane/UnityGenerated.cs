@@ -10,8 +10,8 @@ namespace Unity
     {
         public static void SetupDisplay()
         {
-            DisplayInformation.AutoRotationPreferences = DisplayOrientations.Landscape;
-			ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.Auto;
+            DisplayInformation.AutoRotationPreferences = DisplayOrientations.Portrait;
+			ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.FullScreen;
         }
     }
 }

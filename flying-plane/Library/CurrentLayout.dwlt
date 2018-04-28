@@ -37,11 +37,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 826
+    y: 824
     width: 896
-    height: 121
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+    height: 123
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 51
+  controlID: 107
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,11 +136,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 486
+    y: 484
     width: 896
     height: 340
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 563}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 95
+  controlID: 26
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -259,7 +259,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 563}
   m_MaxSize: {x: 4002, y: 12063}
   vertical: 1
-  controlID: 3866
+  controlID: 27
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -278,8 +278,8 @@ MonoBehaviour:
     y: 0
     width: 555
     height: 947
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -303,9 +303,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 896
-    height: 486
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    height: 484
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -335,9 +335,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 918
+    y: 916
     width: 894
-    height: 100
+    height: 102
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &15
 MonoBehaviour:
@@ -471,18 +471,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/HoloLensXboxControllerInput
+    - Assets/StreamingAssets
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane
+  m_LastProjectPath: C:\Users\camps\Documents\flying-plane\flying-plane
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: ee240000
     m_LastClickedID: 9454
-    m_ExpandedIDs: f229000026300000983600009a3600009c360000
+    m_ExpandedIDs: 000000009a290000522f0000b6350000b8350000ba350000bc350000be350000c0350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -510,18 +510,18 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f22900000c2a00005a2f0000983600009a3600009c36000084f7000074220100
+    m_ExpandedIDs: 000000009a290000be290000ce290000da290000f62e0000482f0000882f0000982f0000a62f0000aa2f0000c22f00001e300000443000006a300000b6350000b8350000ba350000bc350000be350000c0350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: HoloLensXboxController
-      m_OriginalName: HoloLensXboxController
+      m_Name: StreamingAssets
+      m_OriginalName: StreamingAssets
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 74324
+      m_UserData: 12340
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -588,7 +588,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 578
+    y: 576
     width: 894
     height: 319
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -667,17 +667,17 @@ MonoBehaviour:
     x: 0
     y: 92
     width: 894
-    height: 465
+    height: 463
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 2569.807034990339
+  lastFramingTime: 5960.834943295758
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.056403257, y: -0.827294, z: 2.2827072}
+    m_Target: {x: 0.20690918, y: 0.9000244, z: 0.739624}
     speed: 2
-    m_Value: {x: -0.056403257, y: -0.827294, z: 2.2827072}
+    m_Value: {x: 0.20690918, y: 0.9000244, z: 0.739624}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -701,13 +701,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.17442189, y: -0.073188215, z: 0.013001482, w: -0.98186123}
+    m_Target: {x: -0.17337693, y: -0.6931562, z: 0.17758998, w: -0.67671037}
     speed: 2
-    m_Value: {x: -0.17442189, y: -0.073188215, z: 0.013001482, w: -0.98186123}
+    m_Value: {x: -0.17337693, y: -0.6931562, z: 0.17758998, w: -0.67671037}
   m_Size:
-    m_Target: 1.5979614
+    m_Target: 8.759718
     speed: 2
-    m_Value: 1.5979614
+    m_Value: 8.759718
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -748,23 +748,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 70220100
+    m_SelectedIDs: 242f0000
     m_LastClickedID: 0
-    m_ExpandedIDs: e02afcffb62bfcfffe2dfcff3a5cfcff005dfcff485ffcffc66afcff9c6bfcffe46dfcff2a83fcfff283fcff3a86fcff82bdfcff42befcff8ec0fcff3acffcfffacffcff42d2fcff48e1fcff18e2fcff64e4fcffbc23fdff1634fdffe234fdff3437fdff703efdff383ffdff0242fdff8491fdfffe9bfdffc69cfdff1e9ffdff96a3fdff34affdff04b1fdfffab8fdff6abdfdff0ec5fdffcccafdff5014feff1815feff5e17feff98fbffff00000000ac9f000056eb0000a61e010058cc0100
+    m_ExpandedIDs: 78a6fdff76a7fdffd0a9fdffaaf7fdffa8f8fdff06fbfdffb212feffb213feff0c16feffb625feffb226feff0c29feffac87feff9688fefff08afeffb0a5feffccd5feffb6d6feff10d9feffd4b7ffffc8b8ffff22bbffff68efffff96fbffff98fbffff00000000cc300000764400002c4500004c4900009e660000fe85000034c3000056c70000fada0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Plane
+      m_OriginalName: Plane
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 55700
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
