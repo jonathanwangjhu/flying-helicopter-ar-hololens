@@ -102,4 +102,10 @@ public class PlaneControl : MonoBehaviour
             rb.velocity = rb.velocity.normalized * minSpeed;
         }
     }
+
+    public void Reset()
+    {
+        transform.rotation = Quaternion.identity;
+        transform.position = new Vector3(0.0f, -.5f, 2.0f);
+    }
 }

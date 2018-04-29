@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{48c96cd4-3190-4dfa-95ca-3cc00af22845}</ProjectGuid>
+    <ProjectGuid>{8618cd8a-aa10-4495-a5fd-72fe878cdd5a}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -366,6 +366,9 @@
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\PlaneControl.cs">
       <Link>PlaneControl.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\targetBehavior.cs">
+      <Link>targetBehavior.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Transparency.cs">
       <Link>Transparency.cs</Link>
