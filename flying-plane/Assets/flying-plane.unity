@@ -124,7 +124,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 120534237}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 30, y: 10, z: 35}
@@ -506,7 +506,8 @@ MonoBehaviour:
   RotateAroundZSpeed: 2
   accelerationSpeed: 0.01
   topSpeed: 1
-  minSpeed: 0.25
+  minSpeed: 0
+  WaterDrop: {fileID: 1012425973160876, guid: 823df964737739242b902bb7c69446b2, type: 2}
 --- !u!54 &1399202793
 Rigidbody:
   m_ObjectHideFlags: 0
