@@ -7,7 +7,7 @@
 # Default behavior is to never overwrite files
 flying-plane.sln: modified
 flying-plane\App.cs: 3AD343A5F8777824B37693666E057763
-flying-plane\flying-plane.csproj: CCBFD4C07EBE2C2C73543777B12C2081
+flying-plane\flying-plane.csproj: 54D44FF38DD8C27EA5B3A8920879BD24
 flying-plane\flying-plane.csproj.user: modified
 flying-plane\Package.appxmanifest: 67D8C96409B204B27C860E990FF5BDF1
 flying-plane\project.json: 1D02BC64BAC0D041019673A1C4C51737

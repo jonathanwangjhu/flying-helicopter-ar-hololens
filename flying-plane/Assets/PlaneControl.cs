@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class PlaneControl : MonoBehaviour
 {
+    private bool canControl = true;
 
     private Rigidbody rb;
     private ControllerInput controllerInput;
@@ -27,58 +28,61 @@ public class PlaneControl : MonoBehaviour
 
     void FixedUpdate()
     {
-
-        if (Input.GetKey(KeyCode.W))
+        if (canControl)
         {
-            rb.transform.Translate(Vector3.forward * accelerationSpeed);
+            if (Input.GetKey(KeyCode.W))
+            {
+                rb.transform.Translate(Vector3.forward * accelerationSpeed);
+            }
+
+            if (Input.GetKey(KeyCode.S))
+            {
+                rb.transform.Translate(Vector3.forward * accelerationSpeed);
+            }
         }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            rb.transform.Translate(Vector3.forward * accelerationSpeed);
-        }
-
-
     }
     
     void Update()
     {
-        controllerInput.Update();
+        if (canControl)
+        {
+            controllerInput.Update();
 
-         if (Input.GetKey(KeyCode.A))
-         {
-             transform.Rotate(Vector3.down * 45 * Time.deltaTime);
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.Rotate(Vector3.down * 45 * Time.deltaTime);
 
-         }
+            }
 
-         if (Input.GetKey(KeyCode.D))
-         {
-             transform.Rotate(Vector3.up * 45 * Time.deltaTime);
-         }
+            if (Input.GetKey(KeyCode.D))
+            {
+                transform.Rotate(Vector3.up * 45 * Time.deltaTime);
+            }
 
-         if (Input.GetKey(KeyCode.UpArrow))
-         {
-             transform.Rotate(Vector3.left * 45 * Time.deltaTime);
-         }
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                transform.Rotate(Vector3.left * 45 * Time.deltaTime);
+            }
 
-         if (Input.GetKey(KeyCode.DownArrow))
-         {
-             transform.Rotate(Vector3.right * 45 * Time.deltaTime);
-         }
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                transform.Rotate(Vector3.right * 45 * Time.deltaTime);
+            }
 
-         if (Input.GetKey(KeyCode.LeftArrow))
-         {
-             transform.Rotate(Vector3.forward * 45 * Time.deltaTime);
-         }
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                transform.Rotate(Vector3.forward * 45 * Time.deltaTime);
+            }
 
-         if (Input.GetKey(KeyCode.RightArrow))
-         {
-             transform.Rotate(Vector3.back * 45 * Time.deltaTime);
-         }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                transform.Rotate(Vector3.back * 45 * Time.deltaTime);
+            }
 
-        translateRotateScale();
-        translateForward();
-        dropWater();
+            translateRotateScale();
+            translateForward();
+            dropWater();
+        }
     }
 
     private void translateRotateScale()
@@ -105,17 +109,16 @@ public class PlaneControl : MonoBehaviour
         }
     }
 
-
-    public void Reset()
-    {
-        transform.rotation = Quaternion.identity;
-        transform.position = new Vector3(0.0f, -.5f, 2.0f);
-    }
     private void dropWater()
     {
         if (controllerInput.GetButton(ControllerButton.A) || Input.GetKey(KeyCode.Space))
         {
             Instantiate(WaterDrop, transform.position, Quaternion.identity);
         }
+    }
+
+    public void stopControl()
+    {
+        canControl = false;
     }
 }

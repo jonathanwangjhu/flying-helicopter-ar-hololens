@@ -26,7 +26,7 @@ public class targetBehavior : MonoBehaviour {
     {
         if (other.gameObject.name == "boeing")
         {
-            gameController.crash();
+            gameController.gameOver("You crashed!");
         }
 
         Debug.Log("target hit by " + other.gameObject.name);
