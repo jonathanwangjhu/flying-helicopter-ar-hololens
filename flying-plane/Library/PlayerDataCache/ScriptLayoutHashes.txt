@@ -216,7 +216,11 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
+<<<<<<< HEAD
 d931c7b18e816857111dcc0b18f53fe2 Assembly-CSharp.dll:.WaterDropScript
+=======
+0873a886ae78c6a082d7ad7f886d2cc0 Assembly-CSharp.dll:.WaterDropScript
+>>>>>>> 6dc32c60eb1ee7fa4d0b97d7114545fe9574221e
 5312b11540755fd6302c6d4072d56031 Assembly-CSharp.dll:.PlaneControl
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
