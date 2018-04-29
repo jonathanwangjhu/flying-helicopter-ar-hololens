@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8618cd8a-aa10-4495-a5fd-72fe878cdd5a}</ProjectGuid>
+    <ProjectGuid>{3f63b228-5cfd-4af5-8322-8dd11b6e29fd}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -378,6 +378,9 @@
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs">
       <Link>Vuforia\Scripts\DefaultTrackableEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\WaterDropScript.cs">
+      <Link>WaterDropScript.cs</Link>
     </Compile>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
