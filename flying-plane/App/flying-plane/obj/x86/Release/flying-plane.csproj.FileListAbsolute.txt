@@ -612,3 +612,7 @@ C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\obj\x86\Rele
 C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\obj\x86\Release\qualifiers.txt.intermediate
 C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\obj\x86\Release\MultipleQualifiersPerDimensionFound.txt
 C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\obj\x86\Release\ProjectArchitectures.txt
+C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\bin\x86\Release\UnityEngine.Analytics.dll
+C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\bin\x86\Release\Vuforia.UnityExtensions.dll
+C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\bin\x86\Release\UnityEngine.Analytics.pdb
+C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\bin\x86\Release\Vuforia.UnityExtensions.pdb

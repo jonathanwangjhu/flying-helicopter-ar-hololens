@@ -585,7 +585,7 @@ PlayerSettings:
   metroCertificatePassword: 
   metroCertificateSubject: FlyFull
   metroCertificateIssuer: FlyFull
-  metroCertificateNotAfter: 808d6ef22afed401
+  metroCertificateNotAfter: 00f9d2a3e7fed401
   metroApplicationDescription: Vuforia HoloLens Sample
   wsaImages: {}
   metroTileShortName: 
