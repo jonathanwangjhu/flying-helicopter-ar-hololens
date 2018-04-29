@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     private int score;
-    private int timeRemaining;
+    private float timeRemaining;
     public Text scoreText;
     public Text timeText;
     public GameObject resetButton;
@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         score = 0;
-        timeRemaining = 300;
+        timeRemaining = 180f;
         UpdateScore();
 
         resetButton.SetActive(false);
@@ -28,9 +28,9 @@ public class GameController : MonoBehaviour
         UpdateTime();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        timeRemaining--;
+        timeRemaining -= Time.deltaTime;
         UpdateTime();
     }
 
@@ -46,7 +46,17 @@ public class GameController : MonoBehaviour
 
     private string timeRemainingToString()
     {
-        return (timeRemaining / 60).ToString() + ":" + (timeRemaining % 60).ToString();
+        int minutes = Mathf.FloorToInt(timeRemaining / 60f);
+        int seconds = Mathf.RoundToInt(timeRemaining % 60f);
+        string formatedSeconds = seconds.ToString();
+
+        if (seconds == 60)
+        {
+            seconds = 0;
+            minutes += 1;
+        }
+
+        return minutes.ToString("00") + ":" + seconds.ToString("00");
     }
 
     public void crash()
