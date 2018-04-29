@@ -8,7 +8,6 @@ public class PlaneControl : MonoBehaviour
 {
 
     private Rigidbody rb;
-
     private ControllerInput controllerInput;
 
     public float RotateAroundYSpeed = 2.0f;
@@ -17,6 +16,8 @@ public class PlaneControl : MonoBehaviour
     public float accelerationSpeed = .01f;
     public float topSpeed = 1.0f;
     public float minSpeed = 0.25f;
+
+    public GameObject WaterDrop;
 
     void Start()
     {
@@ -77,6 +78,7 @@ public class PlaneControl : MonoBehaviour
 
         translateRotateScale();
         translateForward();
+        dropWater();
     }
 
     private void translateRotateScale()
@@ -103,9 +105,17 @@ public class PlaneControl : MonoBehaviour
         }
     }
 
+
     public void Reset()
     {
         transform.rotation = Quaternion.identity;
         transform.position = new Vector3(0.0f, -.5f, 2.0f);
+    }
+    private void dropWater()
+    {
+        if (controllerInput.GetButton(ControllerButton.A) || Input.GetKey(KeyCode.Space))
+        {
+            Instantiate(WaterDrop, transform.position, Quaternion.identity);
+        }
     }
 }
