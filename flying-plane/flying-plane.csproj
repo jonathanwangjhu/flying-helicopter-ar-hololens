@@ -235,6 +235,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GameController.cs" />
     <Compile Include="Assets\HoloLensXboxControllerInput\ControllerInputExample.cs" />
     <Compile Include="Assets\PlaneControl.cs" />
     <Compile Include="Assets\targetBehavior.cs" />
