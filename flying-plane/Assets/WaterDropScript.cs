@@ -4,14 +4,26 @@ using UnityEngine;
 
 public class WaterDropScript : MonoBehaviour {
 
+    private GameController gameController;
     private Rigidbody rb;
-    public float DeathTime = 2f;
-    public float dropAcc = .5f;
-    public float maxDropSpeed = 1.0f;
+    public float DeathTime = 3f;
+    public float dropAcc = .1f;
+    public float maxDropSpeed = 1.5f;
+    public int scoreValue = 100;
 
     void Start () {
         rb = gameObject.GetComponent<Rigidbody>();
         Destroy(gameObject, DeathTime);
+
+        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
+        if (gameControllerObject != null)
+        {
+            gameController = gameControllerObject.GetComponent<GameController>();
+        }
+        if (gameController == null)
+        {
+            Debug.Log("Cannot find 'GameController' script");
+        }
     }
 	
 	void Update () {
@@ -25,6 +37,17 @@ public class WaterDropScript : MonoBehaviour {
         if (vel.sqrMagnitude > maxDropSpeed * maxDropSpeed)
         {
             rb.velocity = vel.normalized * maxDropSpeed;
+        }
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.name == "target_test")
+        {
+            Debug.Log("Hit target with water");
+            gameController.AddScore(scoreValue);
+            Destroy(col.gameObject);
+            Destroy(gameObject);
         }
     }
 }

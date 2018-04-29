@@ -3,29 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class targetBehavior : MonoBehaviour {
-
-    GameObject canvas;
-
-	// Use this for initialization
-	void Start () {
-        canvas = GameObject.FindWithTag("Respawn");
-        if(canvas == null)
+    
+    private GameController gameController;
+    
+    void Start () {
+        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
+        if (gameControllerObject != null)
         {
-            Debug.Log("couldn't find");
-        } else
-        {
-            Debug.Log("found");
+            gameController = gameControllerObject.GetComponent<GameController>();
         }
-        canvas.SetActive(false);
+        if (gameController == null)
+        {
+            Debug.Log("Cannot find 'GameController' script");
+        }
     }
 	
-	// Update is called once per frame
 	void Update () {
 		
 	}
 
     void OnTriggerEnter(Collider other)
     {
-        canvas.SetActive(true);
+        if (other.gameObject.name == "boeing")
+        {
+            gameController.crash();
+        }
+
+        Debug.Log("target hit by " + other.gameObject.name);
+
     }
 }
