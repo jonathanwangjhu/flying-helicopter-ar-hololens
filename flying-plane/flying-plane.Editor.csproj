@@ -295,7 +295,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Editor\Vuforia\SampleOrientationSetter.cs" />
     <Compile Include="Assets\Vuforia\Editor\Scripts\OpenSourceInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -306,13 +305,11 @@
     <None Include="Assets\Editor\Vuforia\VuforiaMars_ModelTarget\authoringinfo.xml" />
     <None Include="Assets\Editor\Vuforia\VuforiaMars_VuMark\authoringinfo.xml" />
     <None Include="Assets\HoloLensXboxControllerInput\README.txt" />
-    <None Include="Assets\SampleResources\AugmentationAssets\Shaders\Character.shader" />
-    <None Include="Assets\SampleResources\AugmentationAssets\Shaders\CharacterHelper.cginc" />
     <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
     <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.xml" />
     <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml" />
     <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml" />
-    <None Include="Assets\StreamingAssets\Vuforia\flying-flane-db.xml" />
+    <None Include="Assets\StreamingAssets\Vuforia\flying-plane-db.xml" />
     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />

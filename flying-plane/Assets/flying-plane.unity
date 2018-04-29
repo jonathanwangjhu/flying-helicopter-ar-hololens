@@ -328,8 +328,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 59.999985, y: 59.999996, z: 4.5000057}
-  m_Center: {x: 0.0000019073484, y: 52.522175, z: 2.2500048}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &739838111
 Prefab:
   m_ObjectHideFlags: 0
@@ -453,7 +453,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4795cf42a14b4407932169a043022d13, type: 3}
+        m_Texture: {fileID: 2800000, guid: 62fdd60854c1418d84a01e45606c2952, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -539,7 +539,7 @@ Mesh:
     vertexCount: 4
     localAABB:
       m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.49736395, y: 0, z: 0.5}
+      m_Extent: {x: 0.4973704, y: 0, z: 0.5}
   m_Shapes:
     vertices: []
     shapes: []
@@ -592,7 +592,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 128
-    _typelessdata: 7da6febe00000000000000bf000000000000803f0000000000000000000000007da6febe000000000000003f000000000000803f00000000000000000000803f7da6fe3e00000000000000bf000000000000803f000000000000803f000000007da6fe3e000000000000003f000000000000803f000000000000803f0000803f
+    _typelessdata: 55a7febe00000000000000bf000000000000803f00000000000000000000000055a7febe000000000000003f000000000000803f00000000000000000000803f55a7fe3e00000000000000bf000000000000803f000000000000803f0000000055a7fe3e000000000000003f000000000000803f000000000000803f0000803f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -749,12 +749,12 @@ MonoBehaviour:
   mTrackableName: hiro
   mPreserveChildSize: 0
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/flying-flane-db.xml
+  mDataSetPath: Vuforia/flying-plane-db.xml
   mExtendedTracking: 1
-  mAspectRatio: 1.0053
+  mAspectRatio: 1.005287
   mImageTargetType: 0
-  mWidth: 0.018999303
-  mHeight: 0.0191
+  mWidth: 0.107999995
+  mHeight: 0.108571
 --- !u!4 &1955432845
 Transform:
   m_ObjectHideFlags: 0
@@ -763,7 +763,7 @@ Transform:
   m_GameObject: {fileID: 1955432839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0191, y: 0.0191, z: 0.0191}
+  m_LocalScale: {x: 0.108571, y: 0.108571, z: 0.108571}
   m_Children:
   - {fileID: 1031550552}
   m_Father: {fileID: 0}
