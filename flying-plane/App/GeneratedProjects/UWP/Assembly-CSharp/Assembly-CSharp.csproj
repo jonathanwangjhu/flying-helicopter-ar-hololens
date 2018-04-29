@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2c98ef6a-0df0-471a-8449-9efda37131fe}</ProjectGuid>
+    <ProjectGuid>{48c96cd4-3190-4dfa-95ca-3cc00af22845}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -361,47 +361,11 @@
     <SDKReference Include="WindowsTeam, Version=10.0.16299.0"/>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(UnityProjectDir)Assets\Common\CameraSettings.cs">
-      <Link>Common\CameraSettings.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Common\FrameRateSettings.cs">
-      <Link>Common\FrameRateSettings.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Common\InitErrorHandler.cs">
-      <Link>Common\InitErrorHandler.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Common\MenuAnimator.cs">
-      <Link>Common\MenuAnimator.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Common\MenuOptions.cs">
-      <Link>Common\MenuOptions.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Common\SplashAbout\AboutScreen.cs">
-      <Link>Common\SplashAbout\AboutScreen.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Common\SplashAbout\AsyncSceneLoader.cs">
-      <Link>Common\SplashAbout\AsyncSceneLoader.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Common\SplashAbout\LoadingScreen.cs">
-      <Link>Common\SplashAbout\LoadingScreen.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Common\TapHandler.cs">
-      <Link>Common\TapHandler.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Common\TrackableSettings.cs">
-      <Link>Common\TrackableSettings.cs</Link>
-    </Compile>
     <Compile Include="$(UnityProjectDir)Assets\HoloLensXboxControllerInput\ControllerInputExample.cs">
       <Link>HoloLensXboxControllerInput\ControllerInputExample.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\PlaneControl.cs">
       <Link>PlaneControl.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\SampleResources\Scripts\CustomTurnOffBehaviour.cs">
-      <Link>SampleResources\Scripts\CustomTurnOffBehaviour.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\SampleResources\Scripts\VoiceCommands.cs">
-      <Link>SampleResources\Scripts\VoiceCommands.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Transparency.cs">
       <Link>Transparency.cs</Link>
@@ -424,7 +388,7 @@
     <Message Importance="high" Text="Running SerializationWeaver..." />
     <Move SourceFiles="@(IntermediateAssembly)" DestinationFolder="$(TargetDir)Unprocessed" OverwriteReadOnlyFiles="true" />
     <Move SourceFiles="@(IntermediateAssembly-&gt;'%(RelativeDir)%(Filename).pdb')" DestinationFolder="$(TargetDir)Unprocessed" Condition="Exists('@(IntermediateAssembly-&gt;'%(RelativeDir)%(Filename).pdb')')" OverwriteReadOnlyFiles="true" />
-    <Exec Command="&quot;$(UnityWSAToolsDir)SerializationWeaver\SerializationWeaver.exe&quot; &quot;$(TargetDir)Unprocessed\$(TargetFileName)&quot; &quot;-pdb&quot; &quot;-verbose&quot; &quot;-unity-engine=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CoreModule.dll&quot; &quot;$([System.IO.Path]::GetFullPath('$(IntermediateOutputPath)').TrimEnd('\'))&quot; &quot;-lock=$([System.IO.Path]::Combine('$(ProjectDir)', 'project.lock.json'))&quot; &quot;@C:\Users\camps\Documents\flying-plane\flying-plane\App\GeneratedProjects\UWP\Assembly-CSharp\SerializationWeaverArgs.txt&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed&quot; &quot;-unity-networking=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Networking.dll&quot;" />
+    <Exec Command="&quot;$(UnityWSAToolsDir)SerializationWeaver\SerializationWeaver.exe&quot; &quot;$(TargetDir)Unprocessed\$(TargetFileName)&quot; &quot;-pdb&quot; &quot;-verbose&quot; &quot;-unity-engine=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CoreModule.dll&quot; &quot;$([System.IO.Path]::GetFullPath('$(IntermediateOutputPath)').TrimEnd('\'))&quot; &quot;-lock=$([System.IO.Path]::Combine('$(ProjectDir)', 'project.lock.json'))&quot; &quot;@C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\GeneratedProjects\UWP\Assembly-CSharp\SerializationWeaverArgs.txt&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed&quot; &quot;-unity-networking=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Networking.dll&quot;" />
     <Message Importance="high" Text="SerializationWeaver done." />
   </Target>
   <PropertyGroup>

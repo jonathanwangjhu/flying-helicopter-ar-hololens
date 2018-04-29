@@ -13,13 +13,12 @@ Data\level0.resS
 Data\managedAssemblies.txt
 Data\nativePlugins.txt
 Data\resources.assets
-Data\resources.assets.resS
 Data\Resources\unity default resources
 Data\Resources\unity_builtin_extra
 Data\sharedassets0.assets
 Data\sharedassets0.assets.resS
-Data\StreamingAssets\Vuforia\flying-flane-db.dat
-Data\StreamingAssets\Vuforia\flying-flane-db.xml
+Data\StreamingAssets\Vuforia\flying-plane-db.dat
+Data\StreamingAssets\Vuforia\flying-plane-db.xml
 Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat
 Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml
 Data\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.dat
