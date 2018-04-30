@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class PlaneControl : MonoBehaviour
 {
     private bool canControl = true;
+    private bool canDropWater = true;
 
     private Rigidbody rb;
     private ControllerInput controllerInput;
@@ -17,15 +18,14 @@ public class PlaneControl : MonoBehaviour
     public float accelerationSpeed = .01f;
     public float topSpeed = 1.0f;
     public float minSpeed = 0.25f;
+    public float speed = 0;
 
     public GameObject WaterDrop;
-    public float speed;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         controllerInput = new ControllerInput(0, 0.19f);
-        speed = 0;
     }
 
     void FixedUpdate()
@@ -134,7 +134,7 @@ public class PlaneControl : MonoBehaviour
 
     private void dropWater()
     {
-        if (controllerInput.GetButton(ControllerButton.A) || Input.GetKey(KeyCode.Space))
+        if (controllerInput.GetButton(ControllerButton.A) || Input.GetKey(KeyCode.Space) && canDropWater)
         {
             Vector3 position = new Vector3(transform.position.x + Random.Range(-0.02f, 0.02f), transform.position.y, transform.position.z + Random.Range(-0.02f, 0.02f));
             Instantiate(WaterDrop, position, Quaternion.identity);
@@ -144,5 +144,10 @@ public class PlaneControl : MonoBehaviour
     public void stopControl()
     {
         canControl = false;
+    }
+
+    public void stopDroppingWater()
+    {
+        canDropWater = false;
     }
 }

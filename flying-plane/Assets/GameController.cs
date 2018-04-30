@@ -13,6 +13,10 @@ public class GameController : MonoBehaviour
     public GameObject resetButton;
     public Text gameOverText;
     public PlaneControl planeControl;
+    public Text waterGaugeText;
+    public Image waterGaugeImage;
+
+    public float startingWater = 500;
 
     void Start()
     {
@@ -67,6 +71,17 @@ public class GameController : MonoBehaviour
         }
 
         return minutes.ToString("00") + ":" + seconds.ToString("00");
+    }
+
+    public void reduceWaterGauge()
+    {
+        waterGaugeImage.fillAmount -= 1.0f / startingWater;
+
+        if (waterGaugeImage.fillAmount == 0)
+        {
+            waterGaugeText.text = "Out of water!";
+            planeControl.stopDroppingWater();
+        }
     }
 
     public void gameOver(string reason)

@@ -19,6 +19,8 @@ public class WaterDropScript : MonoBehaviour {
         if (gameControllerObject != null)
         {
             gameController = gameControllerObject.GetComponent<GameController>();
+
+            gameController.reduceWaterGauge();
         }
         if (gameController == null)
         {
