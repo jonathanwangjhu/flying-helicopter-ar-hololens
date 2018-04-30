@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class GameController : MonoBehaviour
     public Text scoreText;
     public Text timeText;
     public GameObject resetButton;
-    public Text crashText;
+    public Text gameOverText;
+    public PlaneControl planeControl;
 
     void Start()
     {
@@ -18,7 +20,7 @@ public class GameController : MonoBehaviour
         UpdateScore();
 
         resetButton.SetActive(false);
-        crashText.text = "";
+        gameOverText.text = "";
     }
 
     public void AddScore(int newScoreValue)
@@ -30,8 +32,14 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        timeRemaining -= Time.deltaTime;
-        UpdateTime();
+        if (timeRemaining > 0)
+        {
+            timeRemaining -= Time.deltaTime;
+            UpdateTime();
+        } else
+        {
+            gameOver("Out of time!");
+        }
     }
 
     void UpdateScore()
@@ -48,7 +56,6 @@ public class GameController : MonoBehaviour
     {
         int minutes = Mathf.FloorToInt(timeRemaining / 60f);
         int seconds = Mathf.RoundToInt(timeRemaining % 60f);
-        string formatedSeconds = seconds.ToString();
 
         if (seconds == 60)
         {
@@ -59,9 +66,15 @@ public class GameController : MonoBehaviour
         return minutes.ToString("00") + ":" + seconds.ToString("00");
     }
 
-    public void crash()
+    public void gameOver(string reason)
     {
         resetButton.SetActive(true);
-        crashText.text = "You have crashed!";
+        gameOverText.text = reason;
+        planeControl.stopControl();
+    }
+
+    public void Reset()
+    {
+        SceneManager.LoadScene("flying-plane");
     }
 }

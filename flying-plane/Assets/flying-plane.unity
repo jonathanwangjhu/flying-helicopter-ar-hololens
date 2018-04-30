@@ -726,7 +726,8 @@ MonoBehaviour:
   scoreText: {fileID: 598608063}
   timeText: {fileID: 1699660894}
   resetButton: {fileID: 1310638022}
-  crashText: {fileID: 1703683726}
+  gameOverText: {fileID: 1703683726}
+  planeControl: {fileID: 1399202792}
 --- !u!4 &674393076
 Transform:
   m_ObjectHideFlags: 0
@@ -1019,20 +1020,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1399202792}
+      - m_Target: {fileID: 674393075}
         m_MethodName: Reset
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 123446959}
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1488,7 +1478,7 @@ GameObject:
   - component: {fileID: 1703683727}
   - component: {fileID: 1703683726}
   m_Layer: 5
-  m_Name: CrashText
+  m_Name: GameOverUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
