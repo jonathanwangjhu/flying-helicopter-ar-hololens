@@ -7,7 +7,7 @@ public class WaterDropScript : MonoBehaviour {
     private GameController gameController;
     private Rigidbody rb;
     public float DeathTime = 3f;
-    public float dropAcc = .1f;
+    public float dropAcc = .001f;
     public float maxDropSpeed = 1.5f;
     public int scoreValue = 100;
 
@@ -42,7 +42,7 @@ public class WaterDropScript : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.name == "Target Root")
+        if (col.gameObject.name == "Target Root" || col.gameObject.name == "target_test")
         {
             Debug.Log("Hit target with water");
             gameController.AddScore(scoreValue);

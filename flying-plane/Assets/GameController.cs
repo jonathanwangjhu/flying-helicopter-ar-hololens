@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour
 {
     private int score;
     private float timeRemaining;
+    private bool gamePlaying;
     public Text scoreText;
     public Text timeText;
     public GameObject resetButton;
@@ -19,6 +20,7 @@ public class GameController : MonoBehaviour
         timeRemaining = 180f;
         UpdateScore();
 
+        gamePlaying = true;
         resetButton.SetActive(false);
         gameOverText.text = "";
     }
@@ -32,12 +34,13 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        if (timeRemaining > 0)
+        if (timeRemaining > 0f && gamePlaying)
         {
             timeRemaining -= Time.deltaTime;
             UpdateTime();
-        } else
+        } else if (gamePlaying)
         {
+            timeRemaining = 0f;
             gameOver("Out of time!");
         }
     }
@@ -68,6 +71,7 @@ public class GameController : MonoBehaviour
 
     public void gameOver(string reason)
     {
+        gamePlaying = false;
         resetButton.SetActive(true);
         gameOverText.text = reason;
         planeControl.stopControl();

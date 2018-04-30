@@ -136,7 +136,8 @@ public class PlaneControl : MonoBehaviour
     {
         if (controllerInput.GetButton(ControllerButton.A) || Input.GetKey(KeyCode.Space))
         {
-            Instantiate(WaterDrop, transform.position, Quaternion.identity);
+            Vector3 position = new Vector3(transform.position.x + Random.Range(-0.02f, 0.02f), transform.position.y, transform.position.z + Random.Range(-0.02f, 0.02f));
+            Instantiate(WaterDrop, position, Quaternion.identity);
         }
     }
 
