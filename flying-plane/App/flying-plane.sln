@@ -5,7 +5,7 @@ VisualStudioVersion = 15.6.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "flying-plane", "flying-plane\flying-plane.csproj", "{13A45C13-3265-47B8-BC48-A553B569DF55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj", "{206F6A43-5439-4E00-8A5C-726CEDFBE048}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj", "{8AE609C7-C86D-4DE0-AED6-CD066224B254}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,29 +47,29 @@ Global
 		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x86.ActiveCfg = Release|x86
 		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x86.Build.0 = Release|x86
 		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x86.Deploy.0 = Release|x86
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Debug|ARM.ActiveCfg = Debug|ARM
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Debug|ARM.Build.0 = Debug|ARM
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Debug|x64.ActiveCfg = Debug|x64
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Debug|x64.Build.0 = Debug|x64
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Debug|x86.ActiveCfg = Debug|x86
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Debug|x86.Build.0 = Debug|x86
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Master|ARM.ActiveCfg = Master|ARM
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Master|ARM.Build.0 = Master|ARM
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Master|x64.ActiveCfg = Master|x64
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Master|x64.Build.0 = Master|x64
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Master|x86.ActiveCfg = Master|x86
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Master|x86.Build.0 = Master|x86
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Release|ARM.ActiveCfg = Release|ARM
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Release|ARM.Build.0 = Release|ARM
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Release|x64.ActiveCfg = Release|x64
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Release|x64.Build.0 = Release|x64
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Release|x86.ActiveCfg = Release|x86
-		{206F6A43-5439-4E00-8A5C-726CEDFBE048}.Release|x86.Build.0 = Release|x86
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Debug|ARM.ActiveCfg = Debug|ARM
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Debug|ARM.Build.0 = Debug|ARM
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Debug|x64.ActiveCfg = Debug|x64
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Debug|x64.Build.0 = Debug|x64
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Debug|x86.ActiveCfg = Debug|x86
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Debug|x86.Build.0 = Debug|x86
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Master|ARM.ActiveCfg = Master|ARM
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Master|ARM.Build.0 = Master|ARM
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Master|x64.ActiveCfg = Master|x64
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Master|x64.Build.0 = Master|x64
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Master|x86.ActiveCfg = Master|x86
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Master|x86.Build.0 = Master|x86
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Release|ARM.ActiveCfg = Release|ARM
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Release|ARM.Build.0 = Release|ARM
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Release|x64.ActiveCfg = Release|x64
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Release|x64.Build.0 = Release|x64
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Release|x86.ActiveCfg = Release|x86
+		{8AE609C7-C86D-4DE0-AED6-CD066224B254}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4F2595CB-2A8E-4012-80E8-374144F2D77C}
+		SolutionGuid = {97DDAF83-CACF-4C80-95BF-C9F945F12496}
 	EndGlobalSection
 EndGlobal

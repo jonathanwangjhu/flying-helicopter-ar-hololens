@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>CAMP_KART</Machine>
+    <Machine>CAMP_PC_005</Machine>
     <WindowsUser>camps</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>514aa6a3-c573-42f4-bcdd-c97e30e903b7</PackageIdentityName>
     <PackageIdentityPublisher>CN=FlyFull</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\bin\x86\Release\AppX</LayoutDir>
+    <LayoutDir>C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\bin\x86\Release\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\bin\x86\Release\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\bin\x86\Release\flying-plane.exe">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\bin\x86\Release\flying-plane.exe">
       <PackagePath>entrypoint\flying-plane.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\camps\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
@@ -349,7 +349,7 @@
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityEngineProxy.dll">
       <PackagePath>UnityEngineProxy.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Unprocessed\WinRTLegacy.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Unprocessed\WinRTLegacy.dll">
       <PackagePath>WinRTLegacy.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityPlayer.dll">
@@ -373,284 +373,284 @@
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\WinRTBridge.winmd">
       <PackagePath>WinRTBridge.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Resource.res">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Resource.res">
       <PackagePath>Resource.res</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\flying-plane-db.xml">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\flying-plane-db.xml">
       <PackagePath>Data\StreamingAssets\Vuforia\flying-plane-db.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.xml">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.xml">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\VuforiaWrapper.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\VuforiaWrapper.dll">
       <PackagePath>VuforiaWrapper.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Vuforia.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Vuforia.dll">
       <PackagePath>Vuforia.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\boot.config">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\globalgamemanagers">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\level0">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\level0">
       <PackagePath>Data\level0</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\Resources\unity default resources">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\Resources\unity_builtin_extra">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\globalgamemanagers.assets">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\resources.assets">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\sharedassets0.assets">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\level0.resS">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\sharedassets0.assets.resS">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\managedAssemblies.txt">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\nativePlugins.txt">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\flying-plane-db.dat">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\flying-plane-db.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\flying-plane-db.dat</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.dat">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.dat</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.dat">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.dat</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.dat">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.dat</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\bin\x86\Release\resources.pri">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.TilemapModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.TextRenderingModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.TerrainPhysicsModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.UIModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.UIElementsModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.SpriteMaskModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.SharedInternalsModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.SharedInternalsModule.dll">
       <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.SpriteShapeModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.SpriteShapeModule.dll">
       <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.TerrainModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.StyleSheetsModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.VRModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.VideoModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.VehiclesModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.WebModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.WindModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.UnityConnectModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.UnityAnalyticsModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.UNETModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.UnityWebRequestAudioModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.UnityWebRequestWWWModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.UnityWebRequestTextureModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.UnityWebRequestModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.ScreenCaptureModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.AudioModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.AssetBundleModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.AssetBundleModule.dll">
       <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.ARModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.ClothModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.DirectorModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.CrashReportingModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.CoreModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.AccessibilityModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.AnimationModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.AIModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.ParticlesLegacyModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.JSONSerializeModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.ParticleSystemModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.PhysicsModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.Physics2DModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.PerformanceReportingModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.GridModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.GameCenterModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.InputModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.IMGUIModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.ImageConversionModule.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.Timeline.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\nunit.framework.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.UI.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.SpatialTracking.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.SpatialTracking.dll">
       <PackagePath>UnityEngine.SpatialTracking.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.Analytics.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.HoloLens.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Vuforia.UnityExtensions.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Vuforia.UnityExtensions.dll">
       <PackagePath>Vuforia.UnityExtensions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.StandardEvents.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.StandardEvents.dll">
       <PackagePath>UnityEngine.StandardEvents.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\UnityEngine.Networking.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\HoloLensXboxController.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\HoloLensXboxController.dll">
       <PackagePath>HoloLensXboxController.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\Assembly-CSharp.dll">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\flying-plane\bin\x86\Release\Core\flying-plane.exe">
+    <AppxPackagedFile Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\flying-plane\bin\x86\Release\Core\flying-plane.exe">
       <PackagePath>flying-plane.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
