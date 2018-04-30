@@ -21,6 +21,10 @@ public class PlaneControl : MonoBehaviour
     public GameObject WaterDrop;
     public float speed;
 
+
+    private GameController gameController;
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -143,5 +147,21 @@ public class PlaneControl : MonoBehaviour
     public void stopControl()
     {
         canControl = false;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "SpatialMapping")
+        {
+            gameController.gameOver("You crashed!");
+        }
+
+        Debug.Log("target hit by " + other.gameObject.name);
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        gameController.gameOver("You crashed!");
     }
 }

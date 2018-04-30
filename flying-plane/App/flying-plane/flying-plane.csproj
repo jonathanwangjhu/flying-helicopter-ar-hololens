@@ -354,13 +354,8 @@
   </ItemGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
-    <ProjectReference Include="C:\Users\camps\Documents\flying-plane\flying-plane\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{5cf829a5-7a5b-4ed0-a355-5447bb91721e}</Project>
-=======
     <ProjectReference Include="C:\Users\camps\Documents\flying-plane\flying-plane\flying-plane\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{3f63b228-5cfd-4af5-8322-8dd11b6e29fd}</Project>
->>>>>>> 6dc32c60eb1ee7fa4d0b97d7114545fe9574221e
+      <Project>{df4788e7-ec20-493e-90ed-2b5b216d81ce}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>
