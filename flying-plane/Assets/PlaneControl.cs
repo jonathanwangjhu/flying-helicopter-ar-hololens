@@ -83,6 +83,7 @@ public class PlaneControl : MonoBehaviour
                 {
                     transform.Rotate(Vector3.forward * 45 * Time.deltaTime);
                 }
+                transform.Rotate(Vector3.down * 45 * Time.deltaTime);
             }
 
             if (Input.GetKey(KeyCode.RightArrow))
@@ -92,6 +93,7 @@ public class PlaneControl : MonoBehaviour
                 {
                     transform.Rotate(Vector3.back * 45 * Time.deltaTime);
                 }
+                transform.Rotate(Vector3.up * 45 * Time.deltaTime);
             }
 
             //slowly normalize rotation
