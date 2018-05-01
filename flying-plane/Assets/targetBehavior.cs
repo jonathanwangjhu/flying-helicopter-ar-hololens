@@ -21,15 +21,4 @@ public class targetBehavior : MonoBehaviour {
 	void Update () {
 		
 	}
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.name == "boeing")
-        {
-            gameController.gameOver("You crashed!");
-        }
-
-        Debug.Log("target hit by " + other.gameObject.name);
-
-    }
 }

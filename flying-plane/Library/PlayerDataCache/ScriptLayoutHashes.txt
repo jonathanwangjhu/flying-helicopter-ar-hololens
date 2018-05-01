@@ -1,6 +1,6 @@
 Metro
 PlayerPath?
-C:/Users/camps/Documents/flying-plane/flying-plane/flying-plane/App
+C:/Users/camps/Desktop/flying-plane/flying-plane/App
 SceneListBegin?
 Assets/flying-plane.unity
 SceneListEnd?
@@ -16,7 +16,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-24d5c9240114d47c55f157e0d728cb9c Assembly-CSharp.dll:.GameController
+f0780e83b016cad97a02780efe51c1ed Assembly-CSharp.dll:.GameController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Transparency
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -217,7 +217,7 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 d931c7b18e816857111dcc0b18f53fe2 Assembly-CSharp.dll:.WaterDropScript
-2d3bd51e8fe7e8706882c6a4c601b16b Assembly-CSharp.dll:.PlaneControl
+a332b05f873a6c21e69565a0260046d6 Assembly-CSharp.dll:.PlaneControl
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule

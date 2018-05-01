@@ -15854,12 +15854,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\camps\\Documents\\flying-plane\\flying-plane\\flying-plane\\App\\flying-plane\\flying-plane.csproj",
+      "projectUniqueName": "C:\\Users\\camps\\Desktop\\flying-plane\\flying-plane\\App\\flying-plane\\flying-plane.csproj",
       "projectName": "flying-plane",
-      "projectPath": "C:\\Users\\camps\\Documents\\flying-plane\\flying-plane\\flying-plane\\App\\flying-plane\\flying-plane.csproj",
-      "projectJsonPath": "C:\\Users\\camps\\Documents\\flying-plane\\flying-plane\\flying-plane\\App\\flying-plane\\project.json",
+      "projectPath": "C:\\Users\\camps\\Desktop\\flying-plane\\flying-plane\\App\\flying-plane\\flying-plane.csproj",
+      "projectJsonPath": "C:\\Users\\camps\\Desktop\\flying-plane\\flying-plane\\App\\flying-plane\\project.json",
       "packagesPath": "C:\\Users\\camps\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\camps\\Documents\\flying-plane\\flying-plane\\flying-plane\\App\\flying-plane\\obj\\",
+      "outputPath": "C:\\Users\\camps\\Desktop\\flying-plane\\flying-plane\\App\\flying-plane\\obj\\",
       "projectStyle": "ProjectJson",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
@@ -15876,8 +15876,8 @@
       "frameworks": {
         "uap10.0.10240": {
           "projectReferences": {
-            "C:\\Users\\camps\\Documents\\flying-plane\\flying-plane\\flying-plane\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
-              "projectPath": "C:\\Users\\camps\\Documents\\flying-plane\\flying-plane\\flying-plane\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
+            "C:\\Users\\camps\\Desktop\\flying-plane\\flying-plane\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
+              "projectPath": "C:\\Users\\camps\\Desktop\\flying-plane\\flying-plane\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
             }
           }
         }

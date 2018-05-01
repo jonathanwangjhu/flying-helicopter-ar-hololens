@@ -42,9 +42,9 @@ public class WaterDropScript : MonoBehaviour {
         }
     }
 
-    void OnTriggerEnter(Collider col)
+    void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "Target Root" || col.gameObject.name == "target_test")
+        if (col.gameObject.name == "Target Root")
         {
             Debug.Log("Hit target with water");
             gameController.AddScore(scoreValue);
