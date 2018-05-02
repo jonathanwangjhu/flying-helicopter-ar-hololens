@@ -11,13 +11,12 @@ public class PlaneControl : MonoBehaviour
 
     private Rigidbody rb;
     private ControllerInput controllerInput;
-
-    private Vector3 forceup;
-    private Vector3 forcedown;
+    
     private Vector3 forceforward;
     private Vector3 forceback;
     private Vector3 forceleft;
     private Vector3 forceright;
+    private float currentYaw;
 
     public GameObject WaterDrop;
 
@@ -40,83 +39,36 @@ public class PlaneControl : MonoBehaviour
 
         canControl = true;
         canDropWater = true;
-
-
-        //(PT) set these here so they aren't affected by rotation later
-        forceup = Vector3.up;
-        forcedown = Vector3.down;
-        forceforward = Vector3.forward;
-        forceback = Vector3.back;
-        forceright = Vector3.right;
-        forceleft = Vector3.left;
+        
+        currentYaw = 0;
     }
 
     void FixedUpdate()
     {
         if (canControl)
         {
-            if (Input.GetKey(KeyCode.W))
-            {
-                rb.AddForce(forceup * 2, ForceMode.Acceleration);
-            }
+            forceforward = new Vector3(transform.forward.x, 0, transform.forward.z);
+            forceback = -1 * forceforward;
+            forceright = new Vector3(transform.right.x, 0, transform.right.z);
+            forceleft = -1 * forceright;
 
-            if (Input.GetKey(KeyCode.S))
-            {
-                rb.AddForce(forcedown * 2, ForceMode.Acceleration);
-            }
-        
-            if (Input.GetKey(KeyCode.UpArrow))
-            {
-                rb.AddForce(forceforward, ForceMode.Acceleration);
-                if (transform.rotation.x < 0.25f)
-                {
-                    transform.Rotate(Vector3.right * 45 * Time.deltaTime);
-                }
-            }
-
-            if (Input.GetKey(KeyCode.DownArrow))
-            {
-                rb.AddForce(forceback, ForceMode.Acceleration);
-                if (transform.rotation.x > -0.25f)
-                {
-                    transform.Rotate(Vector3.left * 45 * Time.deltaTime);
-                }
-            }
-
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-                rb.AddForce(forceleft, ForceMode.Acceleration);
-                if (transform.rotation.z < 0.25f)
-                {
-                    transform.Rotate(Vector3.forward * 45 * Time.deltaTime);
-                }
-                transform.Rotate(Vector3.down * 45 * Time.deltaTime);
-            }
-
-            if (Input.GetKey(KeyCode.RightArrow))
-            {
-                rb.AddForce(forceright, ForceMode.Acceleration);
-                if (transform.rotation.z > -0.25f)
-                {
-                    transform.Rotate(Vector3.back * 45 * Time.deltaTime);
-                }
-                transform.Rotate(Vector3.up * 45 * Time.deltaTime);
-            }
-
+            // xbox controls
             controllerInput.Update();
             moveLeftRight();
             addForceUp();
             addForceDown();
             moveForwardBack();
+            adjustPitch();
             dropWater();
         }
 
         //slowly normalize rotation
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, 0), Time.deltaTime);
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, currentYaw, 0), Time.deltaTime);
     }
 
     private void moveForwardBack()
     {
+        // xbox control
         if (controllerInput.GetAxisLeftThumbstickY() > 0)
         {
             rb.AddForce(forceforward, ForceMode.Acceleration);
@@ -133,10 +85,30 @@ public class PlaneControl : MonoBehaviour
                 transform.Rotate(Vector3.left * -controllerInput.GetAxisLeftThumbstickY() * 45 * Time.deltaTime);
             }
         }
+
+        // keyboard control
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            rb.AddForce(forceforward, ForceMode.Acceleration);
+            if (transform.rotation.x < 0.25f)
+            {
+                transform.Rotate(Vector3.right * 45 * Time.deltaTime);
+            }
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            rb.AddForce(forceback, ForceMode.Acceleration);
+            if (transform.rotation.x > -0.25f)
+            {
+                transform.Rotate(Vector3.left * 45 * Time.deltaTime);
+            }
+        }
     }
 
     private void moveLeftRight()
     {
+        // xbox control
         if (controllerInput.GetAxisLeftThumbstickX() > 0)
         {
             rb.AddForce(forceright, ForceMode.Acceleration);
@@ -155,16 +127,78 @@ public class PlaneControl : MonoBehaviour
             }
             transform.Rotate(Vector3.down * 45 * Time.deltaTime);
         }
+
+        // keyboard control
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            rb.AddForce(forceright, ForceMode.Acceleration);
+            if (transform.rotation.z > -0.25f)
+            {
+                transform.Rotate(Vector3.back * 45 * Time.deltaTime);
+            }
+            transform.Rotate(Vector3.up * 45 * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            rb.AddForce(forceleft, ForceMode.Acceleration);
+            if (transform.rotation.z < 0.25f)
+            {
+                transform.Rotate(Vector3.forward * 45 * Time.deltaTime);
+            }
+            transform.Rotate(Vector3.down * 45 * Time.deltaTime);
+        }
     }
 
     private void addForceUp()
     {
-        rb.AddForce(forceup * 2 * controllerInput.GetAxisRightTrigger(), ForceMode.Acceleration);
+        // xbox control
+        rb.AddForce(Vector3.up * 2 * controllerInput.GetAxisRightTrigger(), ForceMode.Acceleration);
+        
+        // keyboard control
+        if (Input.GetKey(KeyCode.W))
+        {
+            rb.AddForce(Vector3.up * 2, ForceMode.Acceleration);
+        }
     }
 
     private void addForceDown()
     {
-        rb.AddForce(forcedown * 2 * controllerInput.GetAxisLeftTrigger(), ForceMode.Acceleration);
+        // xbox control
+        rb.AddForce(Vector3.down * 2 * controllerInput.GetAxisLeftTrigger(), ForceMode.Acceleration);
+
+        // keyboard control
+        if (Input.GetKey(KeyCode.S))
+        {
+            rb.AddForce(Vector3.down * 2, ForceMode.Acceleration);
+        }
+    }
+
+    private void adjustPitch()
+    {
+        // xbox control
+        if (controllerInput.GetAxisRightThumbstickX() > 0)
+        {
+            transform.Rotate(Vector3.up * controllerInput.GetAxisRightThumbstickX() * 45 * Time.deltaTime);
+            currentYaw += controllerInput.GetAxisRightThumbstickX() * 45 * Time.deltaTime;
+        }
+        else if (controllerInput.GetAxisRightThumbstickX() < 0)
+        {
+            transform.Rotate(Vector3.down * controllerInput.GetAxisRightThumbstickX() * 45 * Time.deltaTime);
+            currentYaw -= controllerInput.GetAxisRightThumbstickX() * 45 * Time.deltaTime;
+        }
+
+        // keyboard control
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(Vector3.up * 45 * Time.deltaTime);
+            currentYaw += 45 * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Rotate(Vector3.down * 45 * Time.deltaTime);
+            currentYaw -= 45 * Time.deltaTime;
+        }
     }
 
     private void dropWater()

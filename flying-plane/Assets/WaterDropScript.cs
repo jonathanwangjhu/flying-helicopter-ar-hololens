@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WaterDropScript : MonoBehaviour {
-
-    private GameController gameController;
+    
     private Rigidbody rb;
     public float DeathTime = 2.5f;
     public float dropAcc = .001f;
@@ -13,18 +12,6 @@ public class WaterDropScript : MonoBehaviour {
     void Start () {
         rb = gameObject.GetComponent<Rigidbody>();
         Destroy(gameObject, DeathTime);
-
-        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
-        if (gameControllerObject != null)
-        {
-            gameController = gameControllerObject.GetComponent<GameController>();
-
-            gameController.reduceWaterGauge();
-        }
-        if (gameController == null)
-        {
-            Debug.Log("Cannot find 'GameController' script");
-        }
     }
 	
 	void Update () {
