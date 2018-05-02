@@ -1,2 +1,0 @@
-C:\Users\camps\Desktop\flying-plane\flying-plane\App\flying-plane\flying-plane.csproj;x86
-C:\Users\camps\Desktop\flying-plane\flying-plane\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86

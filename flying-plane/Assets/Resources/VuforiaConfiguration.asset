@@ -18,7 +18,7 @@ MonoBehaviour:
     cameraDeviceModeSetting: -3
     maxSimultaneousImageTargets: 5
     maxSimultaneousObjectTargets: 5
-    useDelayedLoadingObjectTargets: 1
+    useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
     mirrorVideoBackground: 0
   digitalEyewear:
@@ -44,9 +44,9 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
-    - flying-plane-db
+    - flying-heli
     dataSetsToActivate:
-    - flying-plane-db
+    - flying-heli
   videoBackground:
     clippingMode: 0
     numDivisions: 2

@@ -9,6 +9,7 @@ public class PlaneControl : MonoBehaviour
     private bool canControl;
     private bool canDropWater;
     private bool takeOffStage;
+    private bool findPadStage;
 
     private Rigidbody rb;
     private ControllerInput controllerInput;
@@ -20,6 +21,7 @@ public class PlaneControl : MonoBehaviour
     private float currentYaw;
 
     public GameObject WaterDrop;
+    public GameObject helipad;
 
     private GameController gameController;
 
@@ -43,20 +45,16 @@ public class PlaneControl : MonoBehaviour
         canControl = false;
         canDropWater = false;
         takeOffStage = true;
-
-        gameController.BeginGame();
-    }
-
-    private void takeOffComplete()
-    {
-        canControl = true;
-        canDropWater = true;
-        gameController.TakeOffComplete();
-        takeOffStage = false;
+        findPadStage = true;
     }
 
     void FixedUpdate()
     {
+        if (helipad.transform.position != Vector3.zero && !findPadStage)
+        {
+            findPadComplete();
+        }
+
         controllerInput.Update();
         forceforward = new Vector3(transform.forward.x, 0, transform.forward.z);
         forceback = -1 * forceforward;
@@ -70,8 +68,9 @@ public class PlaneControl : MonoBehaviour
             addForceUp();
             addForceDown();
             moveForwardBack();
-            adjustPitch();
+            adjustYaw();
             dropWater();
+            checkReset();
 
             //slowly normalize rotation
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, currentYaw, 0), Time.deltaTime);
@@ -81,6 +80,28 @@ public class PlaneControl : MonoBehaviour
         }
     }
 
+    private void takeOffComplete()
+    {
+        canControl = true;
+        canDropWater = true;
+        gameController.TakeOffComplete();
+        takeOffStage = false;
+    }
+
+    private void findPadComplete()
+    {
+        gameController.BeginGame();
+        findPadStage = true;
+    }
+
+    private void checkReset()
+    {
+        //xbox control
+        if ((controllerInput.GetButton(ControllerButton.Y)))
+        {
+            gameController.Reset();
+        }
+    }
     private void moveForwardBack()
     {
         // xbox control
@@ -194,18 +215,18 @@ public class PlaneControl : MonoBehaviour
         }
     }
 
-    private void adjustPitch()
+    private void adjustYaw()
     {
         // xbox control
         if (controllerInput.GetAxisRightThumbstickX() > 0)
         {
-            transform.Rotate(Vector3.up * controllerInput.GetAxisRightThumbstickX() * 45 * Time.deltaTime);
-            currentYaw += controllerInput.GetAxisRightThumbstickX() * 45 * Time.deltaTime;
+            transform.Rotate(Vector3.up * controllerInput.GetAxisRightThumbstickX() * 90 * Time.deltaTime);
+            currentYaw += controllerInput.GetAxisRightThumbstickX() * 90 * Time.deltaTime;
         }
         else if (controllerInput.GetAxisRightThumbstickX() < 0)
         {
-            transform.Rotate(Vector3.down * controllerInput.GetAxisRightThumbstickX() * 45 * Time.deltaTime);
-            currentYaw -= controllerInput.GetAxisRightThumbstickX() * 45 * Time.deltaTime;
+            transform.Rotate(Vector3.up * controllerInput.GetAxisRightThumbstickX() * 90 * Time.deltaTime);
+            currentYaw += controllerInput.GetAxisRightThumbstickX() * 90 * Time.deltaTime;
         }
 
         // keyboard control
@@ -228,6 +249,7 @@ public class PlaneControl : MonoBehaviour
             Vector3 position = new Vector3(transform.position.x + Random.Range(-0.05f, -0.01f), transform.position.y , transform.position.z + Random.Range(-0.02f, 0.02f));
             GameObject waterDrop = Instantiate(WaterDrop, position, Quaternion.identity);
             Physics.IgnoreCollision(waterDrop.GetComponent<Collider>(), GetComponent<Collider>());
+            gameController.reduceWaterGauge();
         }
     }
 

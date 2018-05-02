@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6f537b09-66e9-4646-b3c0-f6dfe84be0d0}</ProjectGuid>
+    <ProjectGuid>{22563915-16b3-4d13-9bc6-5143d9675d09}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -361,29 +361,29 @@
     <SDKReference Include="WindowsTeam, Version=10.0.16299.0"/>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(UnityProjectDir)Assets\GameController.cs">
-      <Link>GameController.cs</Link>
+    <Compile Include="$(UnityProjectDir)Assets\_Scripts\GameController.cs">
+      <Link>_Scripts\GameController.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\_Scripts\PlaneControl.cs">
+      <Link>_Scripts\PlaneControl.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\_Scripts\targetBehavior.cs">
+      <Link>_Scripts\targetBehavior.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\_Scripts\Transparency.cs">
+      <Link>_Scripts\Transparency.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\_Scripts\WaterDropScript.cs">
+      <Link>_Scripts\WaterDropScript.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\HoloLensXboxControllerInput\ControllerInputExample.cs">
       <Link>HoloLensXboxControllerInput\ControllerInputExample.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\PlaneControl.cs">
-      <Link>PlaneControl.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\targetBehavior.cs">
-      <Link>targetBehavior.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Transparency.cs">
-      <Link>Transparency.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs">
       <Link>Vuforia\Scripts\DefaultInitializationErrorHandler.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs">
       <Link>Vuforia\Scripts\DefaultTrackableEventHandler.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\WaterDropScript.cs">
-      <Link>WaterDropScript.cs</Link>
     </Compile>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
@@ -397,7 +397,7 @@
     <Message Importance="high" Text="Running SerializationWeaver..." />
     <Move SourceFiles="@(IntermediateAssembly)" DestinationFolder="$(TargetDir)Unprocessed" OverwriteReadOnlyFiles="true" />
     <Move SourceFiles="@(IntermediateAssembly-&gt;'%(RelativeDir)%(Filename).pdb')" DestinationFolder="$(TargetDir)Unprocessed" Condition="Exists('@(IntermediateAssembly-&gt;'%(RelativeDir)%(Filename).pdb')')" OverwriteReadOnlyFiles="true" />
-    <Exec Command="&quot;$(UnityWSAToolsDir)SerializationWeaver\SerializationWeaver.exe&quot; &quot;$(TargetDir)Unprocessed\$(TargetFileName)&quot; &quot;-pdb&quot; &quot;-verbose&quot; &quot;-unity-engine=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CoreModule.dll&quot; &quot;$([System.IO.Path]::GetFullPath('$(IntermediateOutputPath)').TrimEnd('\'))&quot; &quot;-lock=$([System.IO.Path]::Combine('$(ProjectDir)', 'project.lock.json'))&quot; &quot;@C:\Users\camps\Desktop\flying-plane\flying-plane\App\GeneratedProjects\UWP\Assembly-CSharp\SerializationWeaverArgs.txt&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed&quot; &quot;-unity-networking=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Networking.dll&quot;" />
+    <Exec Command="&quot;$(UnityWSAToolsDir)SerializationWeaver\SerializationWeaver.exe&quot; &quot;$(TargetDir)Unprocessed\$(TargetFileName)&quot; &quot;-pdb&quot; &quot;-verbose&quot; &quot;-unity-engine=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CoreModule.dll&quot; &quot;$([System.IO.Path]::GetFullPath('$(IntermediateOutputPath)').TrimEnd('\'))&quot; &quot;-lock=$([System.IO.Path]::Combine('$(ProjectDir)', 'project.lock.json'))&quot; &quot;@C:\Users\camps\Documents\flying-plane\flying-plane\App\GeneratedProjects\UWP\Assembly-CSharp\SerializationWeaverArgs.txt&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed&quot; &quot;-unity-networking=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Networking.dll&quot;" />
     <Message Importance="high" Text="SerializationWeaver done." />
   </Target>
   <PropertyGroup>
