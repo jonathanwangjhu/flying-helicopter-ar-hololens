@@ -15,10 +15,10 @@ MonoBehaviour:
     vuforiaLicenseKey: AQLBHOD/////AAADmefqtkqLMU+ZmeerXs/IzdpUwdoZAb0KtdCus1HFxO1KDN5VZe7r7rbNP39t80X1oI3ZnzbHfIi7gFWoX8alGT9AoylQEY/j4jfmlW+2D1rPKv285sdhfHcgo3JRmvw2lC5jyYDb+ec3N+C1GByLWvyiQypOSnvCzxjtdN6J+WTOCMeI0KCisMObvN19xdPEemBy2UN6lLEGNH3Tg1g3PM40VSnzOhweprQKeVWiSsOBfRLxwb9V3PrDgwtr7U7FK7JRMbaV9YYvZZIRJNNrUIhJ9HQdc5Mj5Dqiga+2Df95PxQf0WnU1Q7aTd/KgiZy9awFeWkhxMx6VALzC28rYEEvfvFm7F6o7cgyOWBuOx4/
     ufoLicenseKey: QVR1MVNPYi8vLy8vQUFBQ0tCZm9UZGpMKzBqcHZWY0MzRjN3MXZzZXFwRkQxT3J5VXVzNllCSHAzd1UvWjEyU1prcjNEbVIyUStvdDhvMDZjZ2xIUUI3OWlkZ1d1cGlpSnEwbzhUZlhnNHFkdUNoUVNXNjhlbkpZUWZhM1llbWZ0Vndjd3BFTmVUWWJEUjlSU2xPRUNGTkwwVitkcTBvMTF4eFcvTDI2SHZWaTRZTGZCYUxVUGtveFI3M0Q4aDhzNlE5WldiMDBPQkFDUzdRRm1NQU9tTC9lVjhvdXYxbWJjMFBZaEs5Yk1zMmYyZml1TUVLSkJSbXlYOEg5SmhrOEhmZml3eFlwR3pxKytDaGNlMVMxVkMrMFRaR0NvcDdnZmFWTDFKbk9TUDV6N1AzTis5T2NLNjh0SWtjT0QzT3BVZVJ5N2U2elhOcExTbXY1eXpDYlYvdExTaTlydVFVSnZIZmhNSWhhbmdWd3RNQnByMEdtMDY1Tmx6V3g=
     delayedInitialization: 0
-    cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 4
-    maxSimultaneousObjectTargets: 4
-    useDelayedLoadingObjectTargets: 0
+    cameraDeviceModeSetting: -3
+    maxSimultaneousImageTargets: 5
+    maxSimultaneousObjectTargets: 5
+    useDelayedLoadingObjectTargets: 1
     cameraDirection: 0
     mirrorVideoBackground: 0
   digitalEyewear:
@@ -45,7 +45,6 @@ MonoBehaviour:
   databaseLoad:
     dataSetsToLoad:
     - flying-plane-db
-    - VuforiaMars_Images
     dataSetsToActivate:
     - flying-plane-db
   videoBackground:

@@ -234,14 +234,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GameController.cs" />
+    <Compile Include="Assets\_Scripts\GameController.cs" />
+    <Compile Include="Assets\_Scripts\PlaneControl.cs" />
+    <Compile Include="Assets\_Scripts\targetBehavior.cs" />
+    <Compile Include="Assets\_Scripts\Transparency.cs" />
+    <Compile Include="Assets\_Scripts\WaterDropScript.cs" />
     <Compile Include="Assets\HoloLensXboxControllerInput\ControllerInputExample.cs" />
-    <Compile Include="Assets\PlaneControl.cs" />
-    <Compile Include="Assets\targetBehavior.cs" />
-    <Compile Include="Assets\Transparency.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
-    <Compile Include="Assets\WaterDropScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Editor\Vuforia\CylinderTargetTextures\VuforiaMars_Images\authoringinfo.xml" />
