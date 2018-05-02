@@ -8,6 +8,7 @@ public class PlaneControl : MonoBehaviour
 {
     private bool canControl;
     private bool canDropWater;
+    private bool takeOffStage;
 
     private Rigidbody rb;
     private ControllerInput controllerInput;
@@ -36,23 +37,34 @@ public class PlaneControl : MonoBehaviour
 
         rb = GetComponent<Rigidbody>();
         controllerInput = new ControllerInput(0, 0.19f);
-
-        canControl = true;
-        canDropWater = true;
         
         currentYaw = 0;
+
+        canControl = false;
+        canDropWater = false;
+        takeOffStage = true;
+
+        gameController.BeginGame();
+    }
+
+    private void takeOffComplete()
+    {
+        canControl = true;
+        canDropWater = true;
+        gameController.TakeOffComplete();
+        takeOffStage = false;
     }
 
     void FixedUpdate()
     {
+        controllerInput.Update();
+        forceforward = new Vector3(transform.forward.x, 0, transform.forward.z);
+        forceback = -1 * forceforward;
+        forceright = new Vector3(transform.right.x, 0, transform.right.z);
+        forceleft = -1 * forceright;
+
         if (canControl)
         {
-            forceforward = new Vector3(transform.forward.x, 0, transform.forward.z);
-            forceback = -1 * forceforward;
-            forceright = new Vector3(transform.right.x, 0, transform.right.z);
-            forceleft = -1 * forceright;
-
-            // xbox controls
             controllerInput.Update();
             moveLeftRight();
             addForceUp();
@@ -60,10 +72,13 @@ public class PlaneControl : MonoBehaviour
             moveForwardBack();
             adjustPitch();
             dropWater();
-        }
 
-        //slowly normalize rotation
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, currentYaw, 0), Time.deltaTime);
+            //slowly normalize rotation
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, currentYaw, 0), Time.deltaTime);
+        } else if (takeOffStage)
+        {
+            addForceUp();
+        }
     }
 
     private void moveForwardBack()
@@ -160,6 +175,11 @@ public class PlaneControl : MonoBehaviour
         {
             rb.AddForce(Vector3.up * 2, ForceMode.Acceleration);
         }
+
+        if (takeOffStage && (controllerInput.GetAxisRightTrigger() > 0 || Input.GetKey(KeyCode.W)))
+        {
+            takeOffComplete();
+        }
     }
 
     private void addForceDown()
@@ -214,6 +234,7 @@ public class PlaneControl : MonoBehaviour
     public void stopControl()
     {
         canControl = false;
+        stopDroppingWater();
     }
 
     public void stopDroppingWater()
@@ -224,6 +245,13 @@ public class PlaneControl : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("plane hit something " + collision.gameObject.name);
-        gameController.gameOver("You crashed!");
+
+        if (collision.gameObject.name == "helipad")
+        {
+            gameController.landed();
+        } else
+        {
+            gameController.gameOver("You crashed!");
+        }
     }
 }

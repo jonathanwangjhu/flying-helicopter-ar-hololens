@@ -529,7 +529,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Score: 100'
+  m_Text: 'Score: 000'
 --- !u!222 &598608064
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -724,7 +724,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: kanji-markerMaterial
+  m_Name: hiroMaterial
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -737,7 +737,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a53d094c891f46dc90aa2e47878c8837, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5102e79a55cd4d27a074d54156cd53af, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -873,10 +873,26 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1007020109}
+--- !u!1 &1157352122 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100008, guid: 92e0f8d895e8d464d9e4f1e324da2eb8, type: 3}
+  m_PrefabInternal: {fileID: 1268009168}
 --- !u!4 &1157352123 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400008, guid: 92e0f8d895e8d464d9e4f1e324da2eb8, type: 3}
   m_PrefabInternal: {fileID: 1268009168}
+--- !u!65 &1157352124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1157352122}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 75, y: 1, z: 75}
+  m_Center: {x: 0, y: 9, z: 0}
 --- !u!1001 &1268009168
 Prefab:
   m_ObjectHideFlags: 0
@@ -890,11 +906,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 92e0f8d895e8d464d9e4f1e324da2eb8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.55
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 92e0f8d895e8d464d9e4f1e324da2eb8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4.89
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 92e0f8d895e8d464d9e4f1e324da2eb8, type: 3}
       propertyPath: m_LocalRotation.x
@@ -927,6 +943,10 @@ Prefab:
     - target: {fileID: 400008, guid: 92e0f8d895e8d464d9e4f1e324da2eb8, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 92e0f8d895e8d464d9e4f1e324da2eb8, type: 3}
+      propertyPath: m_Name
+      value: helipad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92e0f8d895e8d464d9e4f1e324da2eb8, type: 3}
@@ -1914,7 +1934,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1528056972
+  randomSeed: -1283936695
   InitialModule:
     serializedVersion: 3
     enabled: 1

@@ -24,16 +24,8 @@ public class GameController : MonoBehaviour
         timeRemaining = 180f;
         UpdateScore();
 
-        gamePlaying = true;
         resetButton.SetActive(false);
-        gameOverText.text = "";
-    }
-
-    public void AddScore(int newScoreValue)
-    {
-        score += newScoreValue;
-        UpdateScore();
-        UpdateTime();
+        gameOverText.text = "Find the Helipad!";
     }
 
     private void Update()
@@ -47,6 +39,27 @@ public class GameController : MonoBehaviour
             timeRemaining = 0f;
             gameOver("Out of time!");
         }
+    }
+
+    public void BeginGame()
+    {
+        gameOverText.text = "Press RT to takeoff!";
+        Debug.Log("Found the helipad.");
+    }
+
+    public void TakeOffComplete()
+    {
+        gameOverText.text = "";
+        gamePlaying = true;
+        Debug.Log("Takeoff Completed.");
+
+    }
+
+    public void AddScore(int newScoreValue)
+    {
+        score += newScoreValue;
+        UpdateScore();
+        UpdateTime();
     }
 
     void UpdateScore()
@@ -92,8 +105,17 @@ public class GameController : MonoBehaviour
         planeControl.stopControl();
     }
 
+    public void landed()
+    {
+        gamePlaying = false;
+        resetButton.SetActive(true);
+        gameOverText.text = "You Win!";
+        planeControl.stopControl();
+        AddScore(Mathf.RoundToInt(timeRemaining) * 5);
+    }
+
     public void Reset()
     {
-        SceneManager.LoadScene("flying-plane");
+        SceneManager.LoadScene("flying-helicopter");
     }
 }
