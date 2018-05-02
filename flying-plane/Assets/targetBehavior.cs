@@ -5,6 +5,7 @@ using UnityEngine;
 public class targetBehavior : MonoBehaviour {
     
     private GameController gameController;
+    public int scoreValue = 100;
     
     void Start () {
         GameObject gameControllerObject = GameObject.FindWithTag("GameController");
@@ -17,8 +18,15 @@ public class targetBehavior : MonoBehaviour {
             Debug.Log("Cannot find 'GameController' script");
         }
     }
-	
-	void Update () {
-		
-	}
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.name == "WaterDrop(Clone)")
+        {
+            Debug.Log("target colided with water");
+            gameController.AddScore(scoreValue);
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+    }
 }
