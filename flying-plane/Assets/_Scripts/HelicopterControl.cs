@@ -4,7 +4,7 @@ using UnityEngine;
 using HoloLensXboxController;
 using UnityEngine.UI;
 
-public class PlaneControl : MonoBehaviour
+public class HelicopterControl : MonoBehaviour
 {
     private bool canControl;
     private bool canDropWater;

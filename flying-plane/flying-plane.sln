@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "flying-plane", "flying-plane.csproj", "{6D040A21-90E1-6677-359B-5C725DEB2EC2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "flying-plane.Editor", "flying-plane.Editor.csproj", "{EA55BD0E-5BEC-1A20-F706-AF81973B856C}"

@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     public Text timeText;
     public GameObject resetButton;
     public Text gameOverText;
-    public PlaneControl planeControl;
+    public HelicopterControl heliControl;
     public Text waterGaugeText;
     public Image waterGaugeImage;
 
@@ -93,7 +93,7 @@ public class GameController : MonoBehaviour
         if (waterGaugeImage.fillAmount == 0)
         {
             waterGaugeText.text = "Out of water!";
-            planeControl.stopDroppingWater();
+            heliControl.stopDroppingWater();
         }
     }
 
@@ -102,7 +102,7 @@ public class GameController : MonoBehaviour
         gamePlaying = false;
         resetButton.SetActive(true);
         gameOverText.text = reason;
-        planeControl.stopControl();
+        heliControl.stopControl();
     }
 
     public void landed()
@@ -110,7 +110,7 @@ public class GameController : MonoBehaviour
         gamePlaying = false;
         resetButton.SetActive(true);
         gameOverText.text = "You Win!";
-        planeControl.stopControl();
+        heliControl.stopControl();
         AddScore(Mathf.RoundToInt(timeRemaining) * 5);
     }
 
