@@ -585,7 +585,7 @@ MonoBehaviour:
   timeText: {fileID: 1699660894}
   resetButton: {fileID: 1310638022}
   gameOverText: {fileID: 1703683726}
-  planeControl: {fileID: 1399202792}
+  heliControl: {fileID: 1399202792}
   waterGaugeText: {fileID: 1768661081}
   waterGaugeImage: {fileID: 1300250497}
   startingWater: 500
