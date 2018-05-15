@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/_Scenes/flying-helicopter.unity
-  isLoaded: 1
-  isActive: 1
